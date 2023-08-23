@@ -1,52 +1,58 @@
-const { DataTypes } = require('sequelize');
+const { DataTypes } = require("sequelize");
 
-const { v4:uuidv4 } = require('uuid');
 // Exportamos una funcion que define el modelo
 // Luego le injectamos la conexion a sequelize.
 module.exports = (sequelize) => {
   // defino el modelo
-  const Dogs = sequelize.define('Dogs', {
-    ID: {
-      type: DataTypes.UUIDV4,
-      defaultValue: uuidv4(),
-      primaryKey: true,
+  sequelize.define(
+    "Dogs",
+    {
+      id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+        allowNull: false,
+        primaryKey: true,
+      },
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      heightMin: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      heightMax: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      weightMin: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      weightMax: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      life_span: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      origin: {
+        type: DataTypes.STRING,
+      },
+      image: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      createdInDb: {
+        //para llamar a los dogs creados en la base de datos, hace una distincion entre la api y la db
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: true,
+      },
     },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    image: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    height: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    weight: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    life_span: {
-      type: DataTypes.STRING,
-      allowNull: false
+    {
+      timestamps: false,
     }
-  });
-
-  return Dogs;
-
-  
+  );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-

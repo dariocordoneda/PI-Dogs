@@ -1,0 +1,37 @@
+.card  {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 400px;
+    background-color: rgba(149, 148, 143, 0.84);
+    padding: 24px 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-image img {
+    height: 250px;
+    width: 350px;
+    border-radius: 8px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: black
+}
+
+.card-link:visited {
+    color: black;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    text-align: left;
+}
+
+.card-details .detail-label {
+    font-weight: 600;
+}

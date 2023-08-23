@@ -1,0 +1,73 @@
+.home {
+    width: 100%;
+    max-width: 1652px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home button, .home select {
+    border-radius: 8px;
+    background-color:#f5a2a2;
+    color: black;
+    font-weight: 400;
+    
+}
+.home button:hover {
+    background-color:rgb(171, 238, 170);
+    cursor: pointer;
+
+}
+
+.home select:hover{
+
+    background-color:rgb(171, 238, 170);
+    cursor: pointer;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo-container .logo-name {
+    font-size: 60px;
+    margin-bottom: 0;
+
+}
+
+.divNB {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 8px;
+}
+
+.divNB .navbar {
+    display: flex;
+    column-gap: 4px;
+    padding: 0;
+}
+
+.divNB ul {
+    list-style-type: none;
+}
+
+.toolbar {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: space-between;
+    column-gap: 8px;
+}
+
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 12px;
+}

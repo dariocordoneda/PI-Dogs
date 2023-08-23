@@ -1,0 +1,40 @@
+.landing h1{
+font-size: 48px;
+letter-spacing: 14px;
+
+}
+
+
+.landing button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color:#f5a2a2;
+    color: black;
+    font-weight: 800;
+    width: 160px;
+    height: 80px;
+    font-size: 24px;
+    opacity: 0.75;
+    letter-spacing: 3px;
+   
+}
+
+.landing button:hover{
+
+    background-color:rgb(171, 238, 170);
+    cursor: pointer;
+
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 900px;
+    
+    background-image: url("https://yt3.ggpht.com/a/AATXAJyyKbVtv50YkDORnMg2A6-ykDnrIjbnlCnehg=s900-c-k-c0xffffffff-no-rj-mo");
+
+}

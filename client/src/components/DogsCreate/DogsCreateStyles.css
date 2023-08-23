@@ -1,0 +1,119 @@
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .logoNameForm {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .created-card {
+    margin-top: 20px;
+  }
+  
+  .texto {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .input-name,
+  .input-form,
+  .input-form-lifeSpan,
+  .select-form {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+  }
+  .lifeSpan{
+    font-weight: 700;
+
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  .temps-div {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .x-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 4px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .button {
+    background-color: #f5a2a2;
+    color: black;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: rgb(171, 238, 170);
+  }
+  
+  .submit-form {
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .submit-button {
+    background-color: #f5a2a2;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .submit-button:disabled, .submit-button:disabled:hover {
+    opacity: 0.5;
+    cursor: default;
+    background-color: #f5a2a2;
+  }
+  
+  .button-back {
+    background-color: #f5a2a2;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  
+  .button-back:hover, .submit-button:hover {
+    background-color: rgb(171, 238, 170);
+  }
+  
